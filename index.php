@@ -4,11 +4,11 @@
     <title>Portfolio - Anthony Skrzypczak</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <script type="text/javascript" src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body id="top">
-    <?php include('blocs/nav.php'); ?>
+    <?php include('pages/blocs/nav.php'); ?>
     <header>
         <h1>Hello!</h1>
     </header>
@@ -49,7 +49,7 @@
             </div>
 
             <a href="#contact">
-                <img src="../img/mail.png" alt="Contact" class="contact_icone">
+                <img src="img/mail.png" alt="Contact" class="contact_icone">
             </a>
         </section>
 
@@ -119,8 +119,8 @@
                 </div>
 
                 <div class="cv">
-                    <img src="../img/CV_anthony" alt="Mon CV">
-                    <a href="../img/CV_Skrzypczak_Anthony.pdf" download="CV_Skrzypczak_Anthony.pdf"><span>Télécharger CV</span></a>
+                    <img src="img/CV_anthony" alt="Mon CV">
+                    <a href="img/CV_Skrzypczak_Anthony.pdf" download="CV_Skrzypczak_Anthony.pdf"><span>Télécharger CV</span></a>
                 </div>
             </div>
         </section>
@@ -129,14 +129,14 @@
             <h2>Projets</h2>
             <div class="container">
                 <a href="#top" class="projet">
-                    <img src="../img/portfolio.png" alt="Portfolio">
+                    <img src="img/portfolio.png" alt="Portfolio">
                     <h3>Portfolio</h3>
                     <p>
                         Site sur lequel vous vous trouvez actuellement.
                     </p>
                 </a>
                 <div class="projet">
-                    <img src="../img/museo.png" alt="Museo">
+                    <img src="img/museo.png" alt="Museo">
                     <h3>Museo</h3>
                     <p>
                         Projet de fin d'année réalisé en groupe, d'un site web type réseau social 
@@ -147,7 +147,7 @@
                     </p>
                 </div>
                 <div class="projet">
-                    <img src="../img/brute_force.png" alt="Brute Force">
+                    <img src="img/brute_force.png" alt="Brute Force">
                     <h3>Brute Force</h3>
                     <p>
                         Projet d'école qui consiste en un site web fournissant des informations sur 
@@ -167,7 +167,7 @@
     </main>
 
     <footer>
-        <?php include('blocs/footer.php'); ?>
+        <?php include('pages/blocs/footer.php'); ?>
     </footer>
 </body>
 </html>

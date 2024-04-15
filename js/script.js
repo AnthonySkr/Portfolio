@@ -10,3 +10,35 @@ window.addEventListener('scroll', function() {
 document.querySelector('.menu-icon').addEventListener('click', function() {
     document.querySelector('.element_nav').classList.toggle('element-nav_hidden');
 });
+
+// Fonction pour ouvrir une page modale
+function openModal(pageId) {
+    var modal = document.getElementById(pageId);
+    modal.style.display = "block";
+}
+
+// Fonction pour fermer une page modale
+function closeModal(pageId) {
+    var modal = document.getElementById(pageId);
+    modal.style.display = "none";
+}
+
+// Ajouter un écouteur d'événement à toutes les div avec la classe openPageButton
+var divs = document.querySelectorAll('.openPage');
+divs.forEach(function(div) {
+    div.addEventListener('click', function() {
+        var targetPageId = this.getAttribute('data-target');
+        openModal(targetPageId);
+    });
+});
+
+
+// Cacher la page si l'utilisateur clique en dehors de la boîte modale
+window.addEventListener('click', function(event) {
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});

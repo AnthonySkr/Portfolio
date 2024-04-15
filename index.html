@@ -26,7 +26,7 @@
                 <div class="bar"></div>
             </div>
         </div>
-    </nav>
+    </nav>    
     <header>
         <h1>Hello!</h1>
     </header>
@@ -153,7 +153,7 @@
                         Site sur lequel vous vous trouvez actuellement.
                     </p>
                 </a>
-                <div class="projet">
+                <div class="projet openPage" data-target="page-museo">
                     <img src="img/museo.png" alt="Museo">
                     <h3>Museo</h3>
                     <p>
@@ -164,12 +164,41 @@
                         (En cours de développement)
                     </p>
                 </div>
-                <div class="projet">
+                <div class="projet openPage" data-target="page-bruteforce">
                     <img src="img/brute_force.png" alt="Brute Force">
                     <h3>Brute Force</h3>
                     <p>
                         Projet d'école qui consiste en un site web fournissant des informations sur 
                         la sécurité des mots de passe, ainsi qu'un générateur de mots de passe.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="page-museo" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('page-museo')">&times;</span>
+                    <h1>Museo</h1>
+                    <img src="img/museo.png" alt="Museo">
+                    <p>
+                        Notre projet de fin d'année consiste à créer un site web axé sur l'art, 
+                        avec des fonctionnalités de réseau social. Notre plateforme permettra aux 
+                        artistes et passionnés d'art de partager, découvrir et interagir avec une 
+                        variété d'œuvres artistiques. Nous nous engageons à fournir une expérience 
+                        conviviale et inclusive, favorisant l'expression créative et la collaboration.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="page-bruteforce" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('page-bruteforce')">&times;</span>
+                    <h1>Brute Force</h1>
+                    <img src="img/brute_force.png" alt="Brute Force">
+                    <p>
+                        Notre projet d'école consiste à créer un site web sur la sécurité des mots de passe, 
+                        comprenant des conseils et un générateur de mots de passe. 
+                        Nous visons à sensibiliser les utilisateurs à l'importance des mots de passe 
+                        sécurisés et à leur fournir les outils nécessaires pour en créer.
                     </p>
                 </div>
             </div>
@@ -185,16 +214,16 @@
     </main>
 
     <footer>
-        <p>Anthony Skrzypczak | 2024</p>
+    <p>Anthony Skrzypczak | 2024</p>
 
-        <div class="liens_sociaux">
-            <a href="https://github.com/AntotoS" target="_blank" rel="noopener noreferrer">
-                <img src="img/github.png" alt="Github">
-            </a>
-            <a href="https://www.linkedin.com/in/anthony-skrzypczak-6301a02b5" target="_blank" rel="noopener noreferrer">
-                <img src="img/linkedin.png" alt="Linkedin">
-            </a>
-        </div>
+    <div class="liens_sociaux">
+        <a href="https://github.com/AntotoS" target="_blank" rel="noopener noreferrer">
+            <img src="img/github.png" alt="Github">
+        </a>
+        <a href="https://www.linkedin.com/in/anthony-skrzypczak-6301a02b5" target="_blank" rel="noopener noreferrer">
+            <img src="img/linkedin.png" alt="Linkedin">
+        </a>
+    </div>
     </footer>
 </body>
 </html>

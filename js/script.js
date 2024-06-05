@@ -14,7 +14,12 @@ window.addEventListener('scroll', function() {
 });
 
 document.querySelector('.menu-icon').addEventListener('click', function() {
-    document.querySelector('.element_nav').classList.toggle('element-nav_hidden');
+    var nav = document.querySelector('.element_nav');
+    if (nav.classList.contains('element-nav_hidden')) {
+        nav.classList.remove('element-nav_hidden');
+    } else {
+        nav.classList.toggle('element-nav_hidden');
+    }
 });
 
 window.addEventListener('scroll', function() {
@@ -24,10 +29,6 @@ window.addEventListener('scroll', function() {
     } else {
         document.querySelector('.element_nav').classList.remove('element-nav_hidden');
     }
-});
-
-document.querySelector('.menu-icon').addEventListener('click', function() {
-    document.querySelector('.element_nav').classList.toggle('element-nav_hidden');
 });
 
 // Fonction pour ouvrir une page modale

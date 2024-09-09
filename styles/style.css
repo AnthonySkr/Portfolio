@@ -97,7 +97,7 @@ header h1 {
         20px 20px 0px #e9019a,
         25px 25px 0px #f40468,
         45px 45px 10px rgb(15, 15, 15);
-    cursor: default;
+    cursor: pointer;
 }
 header h1:hover {
     font-variation-settings: "wght" 100, "ital" 0;
@@ -298,9 +298,40 @@ footer {
     padding: 20px 50px;
 }
 #projets .container {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
+
+#projets .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#projets .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.carousel-button.left {
+    left: 0;
+}
+.carousel-button.right {
+    right: 0;
+}
+
 .projet {
     flex: 0.33;
     padding: 20px;
@@ -316,13 +347,15 @@ footer {
     cursor: pointer;
 }
 .projet:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s ease;
 }
 .projet img {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-height: 150px;
     border: 2px solid black;
+    object-fit: contain;
 }
 
 /* Style pour la boîte modale */
@@ -365,6 +398,15 @@ footer {
 }
 .modal h1 {
     font-size: 1.6em;
+}
+.modal p {
+    font-size: 1.2em;
+}
+.modal ul {
+    margin: 20px;
+}
+.modal li {
+    font-size: 1.2em;
 }
 
 /* Contact */

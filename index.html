@@ -28,7 +28,7 @@
         </div>
     </nav>
     <header>
-        <h1>Hello!</h1>
+        <h1 id="clickable-title">Hello!</h1>
     </header>
 
     <main>
@@ -39,9 +39,10 @@
 
             <div class="description">
                 <p>
-                    Bonjour ! Je suis Anthony Skrzypczak, un passionné d'informatique en première année de 
-                    Bachelor à l'ESGI. Actuellement à la recherche en stage de fin d'année et à la recherche 
-                    d'une alternance à partir de septembre prochain.
+                    Bonjour ! Je suis Anthony Skrzypczak, étudiant en deuxième année à l'ESGI Nantes, 
+                    passionné par le développement web et mobile.
+                    Actuellement en recherche d'une alternance pour développer mes compétences et contribuer 
+                    à des projets concrets.
                 </p>
                 <p>
                     Après avoir exploré l'histoire de l'art et l'archéologie lors de ma licence, mon intérêt 
@@ -55,7 +56,8 @@
                 <p>
                     Je suis convaincu que l'apprentissage se fait aussi en pratiquant. Mon objectif est 
                     de contribuer à des projets innovants tout en continuant à apprendre et à grandir en 
-                    tant que professionnel de l'informatique.
+                    tant que professionnel de l'informatique. Curieux, rigoureux et motivé à apprendre, 
+                    je suis prêt à rejoindre une équipe dynamique pour relever de nouveaux défis.
                 </p>
 
                 <hr>
@@ -79,31 +81,27 @@
                         <div>
                             <h4>Front-End</h4>
                             <div class="comp">
-                                <p>HTML</p>
-                                <div class="conteneur-barre"><span class="barre c95"></span></div>
-                            </div>
-                            <div class="comp">
-                                <p>CSS</p>
-                                <div class="conteneur-barre"><span class="barre c70"></span></div>
+                                <p>HTML/CSS</p>
+                                <div class="conteneur-barre"><span class="barre c85"></span></div>
                             </div>
                             <div class="comp">
                                 <p>JavaScript</p>
-                                <div class="conteneur-barre"><span class="barre c65"></span></div>
+                                <div class="conteneur-barre"><span class="barre c80"></span></div>
                             </div>
                             <div class="comp">
-                                <p>React / React Native</p>
-                                <div class="conteneur-barre"><span class="barre c55"></span></div>
+                                <p>React/React Native</p>
+                                <div class="conteneur-barre"><span class="barre c75"></span></div>
                             </div>
                         </div>
                         <div>
                             <h4>Back-End</h4>
                             <div class="comp">
                                 <p>PHP</p>
-                                <div class="conteneur-barre"><span class="barre c65"></span></div>
+                                <div class="conteneur-barre"><span class="barre c80"></span></div>
                             </div>
                             <div class="comp">
                                 <p>MySQL</p>
-                                <div class="conteneur-barre"><span class="barre c85"></span></div>
+                                <div class="conteneur-barre"><span class="barre c90"></span></div>
                             </div>
                         </div>
                     </div>
@@ -119,28 +117,28 @@
                         </div>
                         <div class="comp">
                             <p>C++</p>
-                            <div class="conteneur-barre"><span class="barre c60"></span></div>
+                            <div class="conteneur-barre"><span class="barre c55"></span></div>
                         </div>
                         <div class="comp">
                             <p>VBA/Excel</p>
-                            <div class="conteneur-barre"><span class="barre c75"></span></div>
+                            <div class="conteneur-barre"><span class="barre c70"></span></div>
                         </div>
                     </div>
                     <div>
                         <h3>Systèmes d'Exploitation</h3>
                         <div class="comp">
                             <p>Windows</p>
-                            <div class="conteneur-barre"><span class="barre c75"></span></div>
+                            <div class="conteneur-barre"><span class="barre c85"></span></div>
                         </div>
                         <div class="comp">
                             <p>Linux</p>
-                            <div class="conteneur-barre"><span class="barre c70"></span></div>
+                            <div class="conteneur-barre"><span class="barre c75"></span></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="cv">
-                    <img src="img/CV_anthony.png" alt="Mon CV">
+                    <img src="img/CV_Skrzypczak_Anthony.png" alt="Mon CV">
                     <a href="img/CV_Skrzypczak_Anthony.pdf" download="CV_Skrzypczak_Anthony.pdf"><span>Télécharger CV</span></a>
                 </div>
             </div>
@@ -149,30 +147,90 @@
         <section id="projets">
             <h2>Projets</h2>
             <div class="container">
-                <a href="#top" class="projet">
-                    <img src="img/portfolio.png" alt="Portfolio">
-                    <h3>Portfolio</h3>
-                    <p>
-                        Site sur lequel vous vous trouvez actuellement.
-                    </p>
-                </a>
-                <div class="projet openPage" data-target="page-museo">
-                    <img src="img/museo.png" alt="Museo">
-                    <h3>Museo</h3>
-                    <p>
-                        Projet de fin d'année réalisé en groupe, d'un site web type réseau social 
-                        tournée autour de l'art.
-                    </p>
-                    <p>
-                        (En cours de développement)
-                    </p>
+                <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel">
+                    <div class="projet openPage carousel-item" data-target="page-bemybest">
+                        <img src="img/Bemybest_discover.png" alt="Museo">
+                        <h3>BemyBest</h3>
+                        <p>
+                            Stage Développement d'une version démo d'une application mobile en 
+                            React Native, visant à rassembler des sportifs de différents sports 
+                            sur une plateforme unique.
+                        </p>
+                    </div>
+                    <a href="#top" class="projet carousel-item">
+                        <img src="img/portfolio.png" alt="Portfolio">
+                        <h3>Portfolio</h3>
+                        <p>
+                            Site sur lequel vous vous trouvez actuellement.
+                        </p>
+                    </a>
+                    <div class="projet openPage carousel-item" data-target="page-museo">
+                        <img src="img/museo.png" alt="Museo">
+                        <h3>Museo</h3>
+                        <p>
+                            Projet de fin d'année réalisé en groupe, d'un site web type réseau social 
+                            tournée autour de l'art.
+                        </p>
+                    </div>
+                    <div class="projet openPage carousel-item" data-target="page-bruteforce">
+                        <img src="img/brute_force.png" alt="Brute Force">
+                        <h3>Brute Force</h3>
+                        <p>
+                            Projet d'école qui consiste en un site web fournissant des informations sur 
+                            la sécurité des mots de passe, ainsi qu'un générateur de mots de passe.
+                        </p>
+                    </div>
                 </div>
-                <div class="projet openPage" data-target="page-bruteforce">
-                    <img src="img/brute_force.png" alt="Brute Force">
-                    <h3>Brute Force</h3>
+                <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+
+            <div id="page-bemybest" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('page-bemybest')">&times;</span>
+                    <h1>BemyBest</h1>
+                    <img src="img/Bemybest_discover.png" alt="BemyBest">
                     <p>
-                        Projet d'école qui consiste en un site web fournissant des informations sur 
-                        la sécurité des mots de passe, ainsi qu'un générateur de mots de passe.
+                        Pendant ce stage, j'ai développé une version démo d'une application mobile 
+                        en React Native, visant à rassembler des sportifs de différents sports sur 
+                        une plateforme unique. L'application permet aux utilisateurs de suivre et 
+                        partager leurs statistiques, de se connecter avec d'autres athlètes, et de 
+                        participer à des événements.
+                    </p>
+
+                    <br>
+                    
+                    <p>
+                        Mes responsabilités incluaient :
+                    </p>
+
+                    <br>
+                    
+                    <ul>
+                        <li>
+                            Conception et développement de l’interface utilisateur intuitive en React Native.
+                        </li>
+                        <li>
+                            Implémentation des fonctionnalités principales, comme la gestion des profils, 
+                            le suivi des statistiques, et la navigation.
+                        </li>
+                        <li>
+                            Collaboration avec l’équipe pour affiner les exigences du projet et prioriser 
+                            les fonctionnalités.
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <p>
+                        Ce stage m'a permis d'acquérir des compétences avancées en React Native 
+                        et de mieux comprendre le processus de développement d’applications mobiles.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <strong>Compétences : Gestion de projet · React Native · PHP · MySQL · Git · Expo</strong>
                     </p>
                 </div>
             </div>
@@ -183,15 +241,54 @@
                     <h1>Museo</h1>
                     <img src="img/museo.png" alt="Museo">
                     <p>
-                        Notre projet de fin d'année consiste à créer un site web axé sur l'art, 
-                        avec des fonctionnalités de réseau social. Notre plateforme permettra aux 
-                        artistes et passionnés d'art de partager, découvrir et interagir avec une 
-                        variété d'œuvres artistiques. <br>
-                        Afin de collaborer efficacement, nous utilisons des outils de gestion de projet
-                        tels que Trello et son modèle Kanban. Nous avons mis en place un rendez-vous
+                        Projet annuel réalisé en équipe dans le cadre de ma première année à l'ESGI, 
+                        nous avons développé un réseau social dédié aux amateurs et artistes, 
+                        permettant de partager des œuvres d'art, de commenter et de réagir aux publications.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Mes contributions incluaient :
+                    </p>
+
+                    <br>
+
+                    <ul>
+                        <li>
+                            Développement du back-end avec PHP et gestion de la base de données 
+                            avec MySQL pour stocker les utilisateurs, œuvres, et commentaires.
+                        </li>
+                        <li>
+                            Conception du front-end en HTML/CSS et JavaScript pour offrir une 
+                            interface utilisateur simple et intuitive.
+                        </li>
+                        <li>
+                            Implémentation de fonctionnalités clés telles que l'inscription et 
+                            l'authentification des utilisateurs, le partage d'œuvres, et 
+                            les interactions sociales (likes, commentaires).
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <p>
+                        Afin de collaborer efficacement, nous utilisions des outils de gestion de projet
+                        tels que Trello et son modèle Kanban. Nous avions mis en place un rendez-vous
                         hebdomadaire pour discuter de l'avancement du projet et des tâches à accomplir.
-                        Nous effectuons également avec l'aide de notre formateur des réunions de présentation
+                        Nous effectuions également avec l'aide de notre formateur des réunions de présentation
                         de l'avancement du projet.
+                        
+                        <br>
+
+                        Ce projet m'a permis de développer mes compétences en développement full-stack, 
+                        tout en travaillant dans un environnement collaboratif.
+                    </p>
+
+                        <br>
+
+                    <p>
+                        <strong>Compétences : Gestion de projet · HTML · JavaScript · PHP · MySQL</strong> 
                     </p>
                 </div>
             </div>
@@ -202,7 +299,7 @@
                     <h1>Brute Force</h1>
                     <img src="img/brute_force.png" alt="Brute Force">
                     <p>
-                        Notre projet d'école consiste à créer un site web sur la sécurité des mots de passe, 
+                        Ce projet d'école consiste à créer un site web sur la sécurité des mots de passe, 
                         comprenant des informations et un générateur de mots de passe. 
                         Nous visons à sensibiliser les utilisateurs à l'importance des mots de passe 
                         sécurisés et à leur fournir les outils nécessaires pour en créer.

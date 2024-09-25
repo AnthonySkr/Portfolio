@@ -1,3 +1,25 @@
+/* Styles Généraux */
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,500,600);
+
+* {
+   font-family: "IBM Plex Mono";
+   padding: 0px;
+   margin: 0px;
+   scroll-behavior: smooth;
+}
+body {
+   background-color: #272325;
+   display: flex;
+   flex-direction: row;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+ul {
+   list-style-type: none;
+}
+
 /*
 V1
 

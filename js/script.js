@@ -1,3 +1,6 @@
+/*
+V1
+
 var originalTitle = 'Hello!';
 var newTitle = 'Anthony';
 var isOriginal = true;
@@ -107,3 +110,4 @@ window.addEventListener('click', function(event) {
         }
     });
 });
+*/

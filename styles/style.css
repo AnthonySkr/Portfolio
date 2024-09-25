@@ -1,4 +1,7 @@
-/* Styles Généraux */
+/*
+V1
+
+Styles Généraux
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
 * {
@@ -17,7 +20,7 @@ h2 {
     text-align: center;
 }
 
-/* Navigation */
+Navigation
 nav {
     display: flex;
     justify-content: space-between;
@@ -75,7 +78,7 @@ nav {
     font-size: 20px;
 }
 
-/* Header */
+Header
 header {
     display: flex;
     align-items: center;
@@ -104,7 +107,7 @@ header h1:hover {
     text-shadow: none;
 }
 
-/* Footer */
+Footer
 footer {
     background-color: black;
     color: white;
@@ -128,7 +131,7 @@ footer {
     margin: 0px;
 }
 
-/* A Propos */
+A Propos
 #a_propos {
     margin: 20px;
     text-align: center;
@@ -157,7 +160,7 @@ footer {
     filter: invert(50%);
 }
 
-/* Compétences */
+Compétences
 #competences {	
     background-color: black;
     color: white;
@@ -168,7 +171,7 @@ footer {
     flex-direction: row;
 }
 
-/* Graphique */
+Graphique
 .graph {
     flex: 0.60;
     margin: 20px;
@@ -245,7 +248,7 @@ footer {
     width: 100%;
 }
 
-/* CV */
+CV
 .cv {
     flex: 0.40;
     display: flex;
@@ -259,7 +262,7 @@ footer {
     width: 100%;
     height: auto;
 }
-/* Bouton CV */
+Bouton CV
 .cv a {
 	background-image: linear-gradient(to right, #00009C 0%, #00a950 100%);
 	border-radius: 40px;
@@ -293,7 +296,7 @@ footer {
 	background: transparent;
 }
 
-/* Projets */
+Projets
 #projets {
     padding: 20px 50px;
 }
@@ -358,7 +361,7 @@ footer {
     object-fit: contain;
 }
 
-/* Style pour la boîte modale */
+Style pour la boîte modale
 .modal {
     display: none;
     position: fixed;
@@ -409,7 +412,7 @@ footer {
     font-size: 1.2em;
 }
 
-/* Contact */
+Contact
 #contact {
     padding: 20px 50px;
     text-align: center;
@@ -422,13 +425,13 @@ footer {
     margin: 10px;
 }
 
-/* Media Queries */
+Media Queries
 @media screen and (max-width: 768px) {
     h2 {
         font-size: 2em;
     }
     
-    /* Navigation */
+    Navigation
     .nav_right {
         margin: 15px;
     }
@@ -447,7 +450,7 @@ footer {
         font-size: 12px;
     }
     
-    /* Header */
+    Header
     header {
         height: 90vh;
     }
@@ -461,13 +464,13 @@ footer {
             40px 40px 10px rgb(15, 15, 15);
     }
     
-    /* A Propos */
+    A Propos
     #a_propos p {
         margin: 10px 0px;
         font-size: 1em;
     }
     
-    /* Compétences */
+    Compétences
     #competences {
         padding: 25px 10px;
     }
@@ -475,7 +478,7 @@ footer {
         flex-direction: column;
     }
 
-    /* Projets */
+    Projets
     #projets {
         padding: 20px 10px;
     }
@@ -483,8 +486,9 @@ footer {
         flex-direction: column;
     }
 
-    /* Contact */
+    Contact
     #contact {
         font-size: 1em;
     }
 }
+*/

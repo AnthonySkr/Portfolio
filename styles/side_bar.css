@@ -22,6 +22,7 @@ header {
 .nom_logo p {
    color: white;
    font-size: 1.4em;
+   font-weight: bold;
 }
 
 /* Navigation panneau gauche */
@@ -42,9 +43,42 @@ nav ul {
 nav li {
    margin: 5px 0px;
 }
+
+/* Liens */
 nav a {
    color: #d1b6fd;
    font-size: 1.2em;
+   text-decoration: none;
+   position: relative;
+   overflow: hidden;
+}
+
+nav a::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: currentColor;
+   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+nav a:hover::after {
+   width: 100%;
+   left: 0;
+}
+nav a:not(:hover)::after {
+   width: 0;
+   left: auto;
+   right: 0;
+}
+
+nav a.active {
+   color: white;
+}
+nav a.active::before {
+   content: "> ";
+   color: white;
 }
 
 /* Icones contact */

@@ -21,12 +21,12 @@ ul {
 }
 
 main {
-   display: flex;
-   flex-direction: column;
    width: 80vw;
    margin-left: 20vw;
    padding: 10px;
 }
+
+/* Top */
 
 /*
 V1

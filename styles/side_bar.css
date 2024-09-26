@@ -44,7 +44,7 @@ nav li {
    margin: 5px 0px;
 }
 
-/* Liens */
+/* Liens page */
 nav a {
    color: #d1b6fd;
    font-size: 1.2em;
@@ -97,7 +97,6 @@ nav a.active::before {
    justify-content: center;
    align-items: center;
 }
-.contact_icone {
-   height: auto;
-   width: inherit;
+.contact a:hover {
+   background-color: rgba(209, 182, 253, 0.2);
 }

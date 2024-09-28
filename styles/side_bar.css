@@ -129,3 +129,42 @@ nav a.active::before {
 .contact a:hover::after {
    opacity: 1;
 }
+
+/* Terminal contact */
+.terminal-contact {
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 80%;
+   max-width: 600px;
+   background-color: #272325;
+   color: #d1b6fd;
+   border: 2px solid #d1b6fd;
+   border-radius: 5px;
+   z-index: 1000;
+}
+.terminal-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   background-color: #333;
+   border-bottom: 1px solid #d1b6fd;
+}
+.terminal-title {
+   font-size: 1.2em;
+}
+.terminal-close {
+   background: none;
+   border: none;
+   color: #d1b6fd;
+   font-size: 1.2em;
+   cursor: pointer;
+}
+.terminal-body {
+   padding: 0 20px;
+   font-family: monospace;
+   white-space: pre-wrap;
+}

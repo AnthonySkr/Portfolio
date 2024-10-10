@@ -131,6 +131,17 @@ nav a.active::before {
 }
 
 /* Terminal contact */
+@keyframes growIn {
+   from {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+   }
+   to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+   }
+}
+
 .terminal-contact {
    display: none;
    position: fixed;
@@ -144,6 +155,7 @@ nav a.active::before {
    border: 2px solid #d1b6fd;
    border-radius: 5px;
    z-index: 1000;
+   animation: growIn 0.5s ease-out;
 }
 .terminal-header {
    display: flex;

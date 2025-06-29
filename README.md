@@ -19,56 +19,45 @@ Bienvenue dans mon portfolio ! Ce site a été conçu pour présenter mon parcou
 
 ```bash
 # Cloner le repo
-git clone https://github.com/ton-utilisateur/mon-portfolio.git
-cd mon-portfolio
+git clone https://github.com/AnthonySkr/Portfolio
+cd Portfolio
 
 # Installer les dépendances
+cd frontend
 npm install
 
 # Lancer le serveur de développement
 npm run dev
 
 Accéder ensuite à http://localhost:5173
-📁 Structure du projet
+```
 
-mon-portfolio/
-├── src/
-│   ├── assets/        # Images et médias
-│   ├── components/    # Composants réutilisables
-│   ├── pages/         # Pages principales du site
-│   ├── styles/        # Fichiers SCSS
-│   └── App.vue        # Composant racine
-├── public/
-├── vite.config.ts
-└── README.md
+## 📁 Structure du projet
 
-✨ À venir
-
-    Ajouter une animation d’intro sur la page d’accueil
-
-    Intégrer une mini app (type à définir)
-
-    Déploiement sur Vercel
-
-📫 Me contacter
-
-    LinkedIn
-
-    GitHub
 ```
 └── 📁Portfolio
     └── 📁frontend
         └── 📁public
             ├── favicon.ico
         └── 📁src
-            └── 📁assets        → images, logos, etc.
-            └── 📁components    → Header, Footer, CardProject.vue, etc.
-            └── 📁router
-            └── 📁stores
-            └── 📁views         → Home.vue, Projects.vue, Contact.vue, etc.
-            └── 📁styles        → _variables.scss, main.scss
-            ├── App.vue
+            └── 📁assets            # Images et médias
+            └── 📁components        # Composants réutilisables
+            └── 📁router            # Définition des routes
+            └── 📁stores            # Fichier pinia (si utilisé)
+            └── 📁views             # Pages principales du site
+            └── 📁styles            # Fichiers SCSS
+                ├── _variables.scss  → couleurs, tailles, etc.
+                └── main.scss        → fichier principal importé dans App.vue
+            ├── App.vue             # Composant racine
             ├── main.ts
         ├── index.html
     └── README.md
 ```
+
+## ✨ À venir
+
+- Ajouter une animation d’intro sur la page d’accueil
+
+- Intégrer une mini app (type à définir)
+
+- Déploiement

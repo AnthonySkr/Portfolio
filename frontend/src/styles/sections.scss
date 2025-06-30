@@ -1,0 +1,26 @@
+@use 'sass:color';
+@use 'variables' as vars;
+
+// Styles communs pour toutes les sections
+section {
+  padding: vars.$spacing-xl 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: vars.$spacing-xl;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: vars.$dark-text;
+  margin-bottom: vars.$spacing-sm;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: color.adjust(vars.$dark-text, $lightness: 30%);
+  max-width: 600px;
+  margin: 0 auto;
+}

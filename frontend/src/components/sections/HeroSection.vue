@@ -30,18 +30,7 @@ onMounted(() => {
           </div>
         </div>
         <div class="hero-visual">
-          <div class="floating-card">
-            <div class="card-icon">💻</div>
-            <h3>Code</h3>
-          </div>
-          <div class="floating-card delay-1">
-            <div class="card-icon">🎨</div>
-            <h3>Design</h3>
-          </div>
-          <div class="floating-card delay-2">
-            <div class="card-icon">🚀</div>
-            <h3>Innovation</h3>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -57,9 +46,10 @@ onMounted(() => {
   display: flex;
   align-items: center;
   background: linear-gradient(
-    135deg,
+    90deg,
     vars.$light-text 0%,
-    color.adjust(vars.$light-gray, $lightness: 3%) 100%
+    vars.$light-text 50%,
+    transparent 50%
   );
   position: relative;
 
@@ -70,11 +60,10 @@ onMounted(() => {
     right: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-      45deg,
-      color.adjust(vars.$primary-color, $alpha: -0.95),
-      color.adjust(vars.$secondary-accent, $alpha: -0.95)
-    );
+    background-image: url('@/assets/guitarBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: 1;
   }
 

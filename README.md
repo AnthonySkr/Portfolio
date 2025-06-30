@@ -44,7 +44,7 @@ Accéder ensuite à http://localhost:5173
             └── 📁components        # Composants réutilisables
             └── 📁router            # Définition des routes
             └── 📁stores            # Fichier pinia (si utilisé)
-            └── 📁views             # Pages principales du site
+            └── 📁pages             # Pages principales du site
             └── 📁styles            # Fichiers SCSS
                 ├── _variables.scss  → couleurs, tailles, etc.
                 └── main.scss        → fichier principal importé dans App.vue

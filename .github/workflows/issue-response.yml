@@ -1,0 +1,22 @@
+name: Auto-respond to Issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment to issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Merci pour votre issue !\n\nCette réponse automatique a été générée pour confirmer la réception de votre issue.\n\n✅ Notification GitHub : Le système de notification par e-mail devrait maintenant être actif.\n\n📧 Vous devriez recevoir un e-mail de notifications@github.com confirmant cette interaction.\n\n---\n*Ce message a été généré automatiquement par GitHub Actions.*'
+            })

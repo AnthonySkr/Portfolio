@@ -36,6 +36,9 @@ Accéder ensuite à http://localhost:5173
 
 ```
 └── 📁Portfolio
+    └── 📁.github
+        └── 📁workflows           # GitHub Actions workflows
+            └── issue-response.yml  → Réponse automatique aux issues
     └── 📁frontend
         └── 📁public
             ├── favicon.ico
@@ -61,3 +64,10 @@ Accéder ensuite à http://localhost:5173
 - Intégrer une mini app (type à définir)
 
 - Déploiement
+## 🤖 Automatisation
+
+Ce projet utilise GitHub Actions pour automatiser certaines tâches :
+
+- **Réponse automatique aux issues** : Lorsqu'une nouvelle issue est créée, un commentaire de confirmation est automatiquement ajouté pour confirmer la réception et tester les notifications par e-mail.
+
+Plus d'informations dans le dossier [`.github/`](.github/README.md).
